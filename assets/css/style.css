@@ -28,22 +28,8 @@ body {
 	color:var(--white);
 }
 
-.site-header {
-    background-image: url(../images/Picture1.jpg);
-    background-position:left 135rem top 48rem;
-    font-size: medium;
-}
-
-.site-header > div {
-    padding: 2rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.site-header-img {
-    width: 30rem;
-    background-color: var(--black);
+p {
+    line-height: 1.5;
 }
 
 div {
@@ -62,18 +48,40 @@ nav ul {
     flex-direction: column;
     gap: 2rem;
     background-color:var(--black);
+    padding: .5rem;
 }
 
 a {
-    color: var(--white)
+    color: var(--white);
+    text-decoration: none;
 }
   
 a:hover {
     color:var(--gold);
 }
 
-a {
-	text-decoration: none;
+section {
+    padding: 4rem;
+    background-color: var(--grey);
+    color: var(--black);
+}
+
+.site-header {
+    background-image: url(../images/Picture1.jpg);
+    background-position:left 135rem top 48rem;
+    font-size: medium;
+}
+
+.site-header > div {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header-img {
+    width: 30rem;
+    background-color: var(--black);
 }
 
 .container {
@@ -82,19 +90,66 @@ a {
     padding: 1.5rem;
 }
 
-.site-main {
-
-
-}
 
 .section-about {
+   display: flex;
+   gap: 2rem;
+}
 
+.section-about-img {
+    width: 8rem;
 }
 
 .section-work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.section-work-project {
+    width: 100%;
+    min-height: 12rem;
+}
+
+.section-work-project:first-child {
+    grid-column: span 3;
+}
+
+.work-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.work-link > span {
+    display: flex;
+    padding: 2rem;
+    height: 100%;
+    justify-content: start;
+    align-items: end;
+    font-size: 2rem;
+}
+
+.section-work-project-1 {
+    background-image: url("../images/Work1.jpg");
+    background-position: cover;
+}
+
+.section-work-project-2 {
+    background-image: url("../images/Work2.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.section-work-project-3 {
+    background-image: url("../images/Work3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
-.section-contact {
-
+.section-work-project-4 {
+    background-image: url("../images/Work4.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
 }
